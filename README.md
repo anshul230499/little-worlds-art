@@ -1,0 +1,53 @@
+# Studio B. — Art Portfolio
+
+A warm, editorial art portfolio built with Next.js 16.3.3 and designed for Vercel.
+
+## Change the personal details
+
+Before publishing, edit `app/page.js` and replace:
+
+- `Studio B.` / `B.` with the artist's name or initials
+- the placeholder artist statement
+- the About bio
+- `hello@example.com`
+- the Instagram link
+
+Also update the site title and description in `app/layout.js`.
+
+## Run locally
+
+Requires Node.js 20.9+ (a current Node 22 or 24 installation is ideal).
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000.
+
+## Push to GitHub
+
+Create an empty GitHub repository, then run:
+
+```bash
+git init
+git add .
+git commit -m "Initial art portfolio"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
+git push -u origin main
+```
+
+## Deploy on Vercel
+
+1. In Vercel, choose **Add New → Project**.
+2. Import the GitHub repository.
+3. Vercel will detect Next.js automatically.
+4. Click **Deploy**. No custom build settings are needed.
+
+Every later push to `main` will update the production site automatically.
+
+## Artwork files
+
+Artwork lives in `public/art` and studio/process photography in `public/studio`.
+The gallery metadata and display order are defined near the top of `app/page.js`.
